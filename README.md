@@ -7,12 +7,12 @@ This project provides an end-to-end exploratory and analytical view of global CO
 
 The notebook `COVID.ipynb` performs:
 
-- ✅ Cleaning and transforming the dataset
-- ✅ Extracting country names from entity strings
-- ✅ Aggregating weekly and monthly test trends
-- ✅ Top 10 countries by total cumulative tests
-- ✅ Weekly smoothed trend of testing (7-day average)
-- ✅ Monthly trend comparison for top countries
+- Cleaning and transforming the dataset
+- Extracting country names from entity strings
+- Aggregating weekly and monthly test trends
+- Top 10 countries by total cumulative tests
+- Weekly smoothed trend of testing (7-day average)
+- Monthly trend comparison for top countries
 
 **Tools Used:**  
 `Pandas`, `Matplotlib`, `Seaborn`, `Plotly`
@@ -24,11 +24,11 @@ The notebook `COVID.ipynb` performs:
 The file `Covid.sql` includes SQL queries for deeper analysis, using a table named `covid_testing_cleaned_updated`.
 
 ### SQL Queries Included:
-- ✅ Total tests per country
-- ✅ Weekly average increase in tests per country
-- ✅ Top 5 countries with most testing per 1000 population (requires `country_population` join)
-- ✅ Null-checks: Countries with missing daily test data
-- ✅ Latest cumulative total per country (using `ROW_NUMBER()`)
+- Total tests per country
+- Weekly average increase in tests per country
+- Top 5 countries with most testing per 1000 population (requires `country_population` join)
+- Null-checks: Countries with missing daily test data
+- Latest cumulative total per country (using `ROW_NUMBER()`)
 
 **Assumed DB:** MS SQL Server (uses `ROW_NUMBER()` and `TOP`)
 
